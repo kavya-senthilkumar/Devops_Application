@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'yourdockerhubusername/simple-node-app'
+        DOCKER_IMAGE = 'kavyas26/devops_application'
         DOCKER_CREDENTIALS_ID = 'dockerhub'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/simple-node-app.git'
+                git 'https://github.com/kavya-senthilkumar/Devops_Application'
             }
         }
 
